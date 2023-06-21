@@ -30,11 +30,11 @@ public class PointsHistoryFragment extends Fragment {
     private PointsHistoryRecyclerAdapter pointsHistoryRecyclerAdapter;
 
     private List<Transaction> transactionList = List.of(
-            new Transaction("Food/Voucher", -350, LocalDateTime.now(),true),
+            new Transaction("Food/Voucher", -350, LocalDateTime.now(),false),
             new Transaction("Deposit points",2250, LocalDateTime.now(),true),
             new Transaction("Donate points", -350, LocalDateTime.now(),false),
-            new Transaction("Deposit points", 1000, LocalDateTime.now(),true),
-            new Transaction("Donate points", -350, LocalDateTime.now(),true),
+            new Transaction("Deposit points", +1000, LocalDateTime.now(),true),
+            new Transaction("Donate points", +350, LocalDateTime.now(),true),
             new Transaction("Food/Voucher",-350, LocalDateTime.now(),false)
     );
 

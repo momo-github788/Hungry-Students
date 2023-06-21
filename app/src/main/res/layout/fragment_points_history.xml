@@ -16,15 +16,14 @@
         android:id="@+id/pointsHistoryFragmentLinearLayout"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="26sp"
-            android:textColor="@color/dark_black"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Points history"/>
-
-
+            android:text="Points history"
+            android:textColor="@color/dark_black"
+            android:textSize="26sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,12 +38,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
 
-        android:padding="12dp"
-        android:layout_below="@+id/pointsHistoryFragmentLinearLayout"
         android:id="@+id/objectiveRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:layout_below="@+id/pointsHistoryFragmentLinearLayout"
+        android:padding="12dp" />
 
 
 </RelativeLayout>

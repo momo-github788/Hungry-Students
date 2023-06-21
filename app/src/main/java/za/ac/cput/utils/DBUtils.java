@@ -78,4 +78,22 @@ public class DBUtils {
     public static final String CREATE_POINTS_TRANSACTION_TABLE_QUERY = "";
     public static final String DROP_POINTS_TRANSACTION_TABLE_QUERY = "";
 
+    // POINTS HISTORY TABLE
+    public  static final String POINTS_HISTORY_TABLE = "points_history";
+
+    public static final String COLUMN_TITLE = "title";
+
+    public  static final String COLUMN_TRANSACTION_ID = "transaction_id";
+
+    public static final String COLUMN_DESCRIPTION = "description";
+
+    public static final String COLUMN_POINTS = "points";
+
+    public static final String CREATE_POINTS_HISTORY_TABLE_QUERY = "CREATE TABLE IF NOY EXISTS" + POINTS_HISTORY_TABLE +
+            "(" + COLUMN_TITLE + "TEXT," + COLUMN_TRANSACTION_ID + "INTEGER REFRENCES"
+            + COLUMN_DESCRIPTION + "TEXT," + COLUMN_POINTS + "INTEGER)";
+
+    public static final String DROP_POINTS_HISTORY_QUERY = "DROP TABLE IF EXISTS " + POINTS_HISTORY_TABLE;
+
+
 }
